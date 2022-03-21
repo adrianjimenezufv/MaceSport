@@ -1,10 +1,22 @@
-  <ion-content [fullscreen]="true">
-    <ion-header collapse="condense">
-      <ion-toolbar>
-        <ion-title size="large">Blank</ion-title>
-      </ion-toolbar>
-    </ion-header>
-  
-    <ion-img src="../assets/img/MaceLogo.jfif"></ion-img>
-   
-  </ion-content>
+  <ion-app >
+    <ion-split-pane when="sm" contentId="main-content" class="home">
+      <div class="ion-page" id="main-content">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+            <div class="ion-text-center">
+              <ion-img class= "logo" src="../assets/img/MaceLogo.jfif"></ion-img>
+              <h3 class="texto">Te damos la bienvenida a</h3>
+              <h3 class="texto">MaceSport</h3>
+            </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <div class="ion-text-center">
+          <h4 class="texto">¡Vamos!</h4>
+        </div>
+        <ion-button color="secondary">Iniciar Sesión</ion-button>
+        <ion-button color="secondary">Registrarse</ion-button>
+      </div>
+    </ion-split-pane>
+  </ion-app>
